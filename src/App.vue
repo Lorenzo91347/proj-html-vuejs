@@ -11,7 +11,7 @@ export default{
 }
 </script>
 <template>
-    <div>I am App</div>
+  
     <HeaderMain/>
     <Main/>
     <FooterMain/>

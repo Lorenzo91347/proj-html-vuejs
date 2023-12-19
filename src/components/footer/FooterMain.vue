@@ -3,6 +3,24 @@ import FooterInfo from './FooterInfo.vue'
 import Social from './Social.vue'
 
 export default{
+    data(){
+        return{
+            listLeft:[
+                {info:'Home'},
+                {info:'Rates'},
+                {info:'Testimonials'},
+                {info:'Blog'},
+                {info:'Free Quote'}
+        ],
+            listRight:[
+                {info:'Heading Out To College?'},
+                {info:'Moving Your Business?'},
+                {info:'Outstanding Quality'},
+                {info:'Cost of Moving'},
+                {info:'Best Moving Tips'}
+        ]
+        }
+    },
 
     components:{
         FooterInfo,
@@ -11,8 +29,11 @@ export default{
 }
 </script>
 <template>
-    I am FooterMain
-    <FooterInfo/>
+   <ul>
+    <FooterInfo v-for="item in listLeft" 
+    :value="item.info"
+    />
+    </ul>
     <Social/>
 
 </template>

@@ -1,8 +1,12 @@
 <script>
-export default{}
+export default{
+    props:{
+        value:"string"
+    }
+}
 </script>
 <template>
-I am FooterInfo
+    <li>{{ value }}</li>
 </template>
 <style scoped lang="scss">
 @use '../../assets/styles/colors.scss' as *;

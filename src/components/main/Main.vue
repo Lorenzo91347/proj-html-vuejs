@@ -17,7 +17,7 @@ export default{
 }
 </script>
 <template>
-    I am Main
+
     <Award/>
     <Service/>
     <Move/>
