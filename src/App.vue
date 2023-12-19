@@ -15,6 +15,7 @@ export default{
     <HeaderMain/>
     <Main/>
     <FooterMain/>
+    <font-awesome-icon icon="fa-brands fa-twitter" />
 
 </template>
 <style scoped lang="scss">
