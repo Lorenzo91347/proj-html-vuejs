@@ -2,7 +2,7 @@
 export default{}
 </script>
 <template>
-
+I am HeadJUmbo
 </template>
 <style scoped lang="scss">
 @use '../../assets/styles/colors.scss' as *;

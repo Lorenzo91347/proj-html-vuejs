@@ -2,7 +2,7 @@
 export default{}
 </script>
 <template>
-
+I am Testimonials
 </template>
 <style scoped lang="scss">
 @use '../../assets/styles/colors.scss' as *;
