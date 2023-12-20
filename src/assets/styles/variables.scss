@@ -1,1 +1,10 @@
+@use './colors.scss' as *;
 
+// this class will be used throughtout the project to style buttons
+
+.blue-btn{
+    background-color: $color-denim-btn;
+    color: white;
+    padding:10px 25px;
+    border-radius: 20px;
+}
