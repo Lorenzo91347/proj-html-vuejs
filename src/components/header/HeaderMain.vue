@@ -78,6 +78,9 @@ export default{
             font-weight: bold;
             gap: 50px;
         }
+        .blue-btn{
+            padding: 10px 25px;
+        }
     }
     .jumbo-cnt{
         height: 550px;

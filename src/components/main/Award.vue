@@ -20,6 +20,7 @@ export default{}
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: $color-award-bg;
 }
 .award-cnt{
     text-align: center;
@@ -40,6 +41,9 @@ export default{}
         font-weight: 900;
         font-size: 30px;
         width: 300px;
+    }
+    .blue-btn{
+        padding: 10px 20px;
     }
 }
 </style>

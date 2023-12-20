@@ -4,8 +4,10 @@ import Service from './Service.vue';
 import Move from './Move.vue';
 import Testimonials from './Testimonials.vue';
 import QuoteBlue from './QuoteBlue.vue';
-import Quotebottom from './Quotebottom.vue'
+import Quotebottom from './Quotebottom.vue';
+
 export default{
+   
 
     components:{
         Award,
@@ -13,7 +15,8 @@ export default{
         Move,
         Testimonials,
         QuoteBlue,
-        Quotebottom
+        Quotebottom,
+        
 
     }
 }

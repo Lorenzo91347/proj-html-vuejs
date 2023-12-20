@@ -5,8 +5,14 @@
 .blue-btn{
     background-color: $color-denim-dark;
     color: white;
-    padding:10px 25px;
     border-radius: 20px;
     text-transform: uppercase;
 
+}
+.cards{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 100px;
+    text-align: center;
 }
