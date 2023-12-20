@@ -29,6 +29,7 @@ export default{}
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 500px;
     
     .info-content{
         display:flex;
