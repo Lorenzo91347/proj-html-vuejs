@@ -23,7 +23,7 @@ export default{}
 <style scoped lang="scss">
 @use '../../assets/styles/colors.scss' as *;
 .info{
-    height: 95px;
+    height: 60px;
     background-color: $color-lima-light;
     color: white;
     display: flex;

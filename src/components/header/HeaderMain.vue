@@ -68,7 +68,7 @@ export default{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height:200px;
+        height:110px;
         background-color: transparent;
         
         ul{
@@ -80,7 +80,7 @@ export default{
         }
     }
     .jumbo-cnt{
-        height: 400px;
+        height: 550px;
         display: flex;
         justify-content: center;
         align-items: center;
