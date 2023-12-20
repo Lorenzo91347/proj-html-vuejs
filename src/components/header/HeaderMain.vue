@@ -58,9 +58,9 @@ export default{
 @use '../../assets/styles/variables.scss' as *;
 
 .head-bg{
-    height:1585px;
+
     background-image: url(../../assets/images/avada-movers-homeherobackground-final.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 
 

@@ -3,7 +3,8 @@ import Award from './Award.vue';
 import Service from './Service.vue';
 import Move from './Move.vue';
 import Testimonials from './Testimonials.vue';
-import Quote from './Quote.vue';
+import QuoteBlue from './QuoteBlue.vue';
+import Quotebottom from './Quotebottom.vue'
 export default{
 
     components:{
@@ -11,20 +12,24 @@ export default{
         Service,
         Move,
         Testimonials,
-        Quote
+        QuoteBlue,
+        Quotebottom
 
     }
 }
 </script>
-<template>
 
+<template>
+    <QuoteBlue/>
     <Award/>
     <Service/>
     <Move/>
     <Testimonials/>
-    <Quote/>
+    <Quotebottom/>
+    
 
 </template>
+
 <style scoped lang="scss">
 @use '../../assets/styles/colors.scss' as *;
 </style>

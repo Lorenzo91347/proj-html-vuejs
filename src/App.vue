@@ -1,21 +1,24 @@
 <script>
 import HeaderMain from './components/header/HeaderMain.vue';
-import Main from './components/main/Main.vue';
+import ContMain from './components/main/ContMain.vue';
 import FooterMain from './components/footer/FooterMain.vue';
 export default{
     components:{
         HeaderMain,
-        Main,
+        ContMain,
         FooterMain
     }
 }
 </script>
 <template>
-  
+  <header>
     <HeaderMain/>
-    <Main/>
+</header>
+    <main>
+        <ContMain/>
+    </main>
+    
     <FooterMain/>
-    <font-awesome-icon icon="fa-brands fa-twitter" />
 
 </template>
 <style scoped lang="scss">
