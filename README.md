@@ -1,7 +1,17 @@
-# Vue 3 + Vite
+# Avada Movers
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is a Midterm project for Boolean Web Developer Course.
 
-## Recommended IDE Setup
+Minimum technical requirements included following a layout provided and populate the header and footer lists
+using the props method which is a Vue built-in.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Technologies involved: Vite,Vue 3,Node.js,Html,Css/Sass,Javascript.
+
+the addons are Google Fonts and FontAwesome
+
+Bonuses:
+1. the black box with a white chevron on the view port will bring you to the top of the page.
+2. on the Award section,clicking the testimonial button will bring you down to the Testimonials section.
+3. (IN PROGRESS) clicking on the text in the QuoteBlue section will bring up a quote calculator,
+    not functional yet!
+
