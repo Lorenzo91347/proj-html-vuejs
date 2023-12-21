@@ -1,8 +1,14 @@
 <script>
+
+// Imports from the main nodes
+
 import HeaderMain from './components/header/HeaderMain.vue';
 import ContMain from './components/main/ContMain.vue';
 import FooterMain from './components/footer/FooterMain.vue';
 export default{
+
+    //Component Registration
+
     components:{
         HeaderMain,
         ContMain,
@@ -20,9 +26,12 @@ export default{
         <footer>
             <FooterMain/>
         </footer>
-
+        
 </template>
 <style scoped lang="scss">
+
+//Style and font imports
+
 @use '../src/assets/styles/reset.scss' as *;
 @use '../src/assets/styles/colors.scss' as *;
 @use '../src/assets/styles/variables.scss' as *;
@@ -30,6 +39,8 @@ export default{
 body{
     font-family: 'Mulish', sans-serif;
 }
+
+
 
 
 

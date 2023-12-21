@@ -10,7 +10,7 @@ export default{}
         <div class="info-content">
             <font-awesome-icon icon="fa-solid fa-phone" />
             <div>Call Us For a free quote:1800.555.6789</div>
-    </div>
+        </div>
         <div class="info-content">
             <font-awesome-icon icon="fa-brands fa-facebook-f" />
             <font-awesome-icon icon="fa-brands fa-twitter" />
@@ -21,6 +21,8 @@ export default{}
 </template>
 
 <style scoped lang="scss">
+
+//Styles imports
 @use '../../assets/styles/colors.scss' as *;
 .info{
     height: 60px;

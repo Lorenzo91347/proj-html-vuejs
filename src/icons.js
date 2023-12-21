@@ -1,4 +1,4 @@
-//FOntAwesome Icon IMports from Module
+//FontAwesome Icon Imports from Module
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 

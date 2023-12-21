@@ -76,7 +76,7 @@ export default{
         width: 25px;
         text-align: center;
         position: fixed;
-        z-index: 99;
+        z-index: 3;
         bottom: 0;
         right: 5%;
         font-size: 10px;

@@ -1,5 +1,13 @@
 <script>
-export default{}
+export default{
+    methods: {
+    scrollToTest() {
+        const element = document.getElementById('cards');
+      element.scrollIntoView({ behavior: 'smooth' });
+      console.log('click')
+    },
+  },
+}
 </script>
 <template>
     <div class="award">
@@ -7,7 +15,7 @@ export default{}
             <div class="grey">headache free</div>
             <h2>award winning moving company</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus commodi cumque ad quia nesciunt fugiat, quibusdam, porro maiores dolores, itaque rem pariatur! Omnis ipsam eos aliquam repudiandae quibusdam excepturi officiis.</p>
-            <div class="blue-btn">read our testimonials</div>
+            <div class="blue-btn" @click="scrollToTest()">read our testimonials</div>
         </div>
     </div>
 </template>

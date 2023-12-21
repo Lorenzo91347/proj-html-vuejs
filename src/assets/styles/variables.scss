@@ -1,12 +1,13 @@
 @use './colors.scss' as *;
 
-// this class will be used throughtout the project to style buttons
+// this class will be used throughout the project to style buttons
 
 .blue-btn{
     background-color: $color-denim-dark;
     color: white;
     border-radius: 20px;
     text-transform: uppercase;
+    cursor: pointer;
 
 }
 .cards{

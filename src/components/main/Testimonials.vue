@@ -21,11 +21,11 @@ export default{
 }
 </script>
 <template>
-<div class="test-bg">
+<div class="test-bg" id="cards">
     <div class="test-title">
         <div class="title">
-            <div class="grey">we are a professional</div>
-            <h2>full service solution</h2>
+            <div class="grey">happy customers</div>
+            <h2 >testimonials</h2>
         </div>
     </div>
     <div class="cards-cnt">

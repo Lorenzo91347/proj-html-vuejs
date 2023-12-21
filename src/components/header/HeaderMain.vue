@@ -34,7 +34,6 @@ export default{
 }
 </script>
 <template>
-    
     <HeadInfo />
     <div class="head-bg">
         <div class="nav-cnt">
@@ -54,6 +53,9 @@ export default{
 
 </template>
 <style scoped lang="scss">
+
+//Style imports
+
 @use '../../assets/styles/colors.scss' as *;
 @use '../../assets/styles/variables.scss' as *;
 
