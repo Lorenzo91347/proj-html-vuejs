@@ -3,6 +3,9 @@ import Cards from './Cards.vue';
 export default{
     data(){
         return{
+            
+            //Object array containing the info to populate the cards
+
             service:[
                 {
                         "img":'../src/assets/images/avada-movers-serviceonephoto-final-200x128.jpg',
@@ -19,6 +22,9 @@ export default{
             ],
         }
     },
+
+    // Component registration
+    
     components:{
         Cards
     }
@@ -31,6 +37,9 @@ export default{
             <h2>full service solution</h2>
         </div>
     </div>
+
+    <!-- this block contains the v-for cycling through the props to populate the cards -->
+
 <div class="cards">
     <Cards v-for="item in service"
     :thumb = "item.img"

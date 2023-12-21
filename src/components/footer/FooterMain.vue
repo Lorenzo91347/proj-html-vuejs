@@ -3,6 +3,9 @@ import FooterInfo from './FooterInfo.vue'
 import Social from './Social.vue'
 
 export default{
+
+    // these object arrays will be used by the child component to populate itself
+
     data(){
         return{
             listLeft:[
@@ -22,6 +25,8 @@ export default{
         }
     },
 
+    //Component registration
+
     components:{
         FooterInfo,
         Social
@@ -37,6 +42,10 @@ export default{
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel temporibus quasi magnam architecto, sit at inventore et accusantium veritatis voluptate cupiditate porro sed repellat! Ut dignissimos et cum libero voluptas.</p>
                     <img src="../../assets/images/avada-movers-retinalogo.png" alt="">
                 </div> 
+
+                <!-- this block shows the child component being called twice to populate the respective sections using 
+                two different lists-->
+                
                 <div class="list-left">
                     <h4>avada movers</h4>
                     <ul>

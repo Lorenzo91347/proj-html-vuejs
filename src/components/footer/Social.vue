@@ -1,6 +1,9 @@
 <script>
 export default{
     methods: {
+
+        // method function to reset the page to the top
+
     scrollToTop() {
       window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
       console.log('click')
@@ -27,6 +30,9 @@ export default{
             <font-awesome-icon icon="fa-brands fa-instagram" />
             <font-awesome-icon icon="fa-brands fa-youtube" />
         </div>
+
+        <!-- this line of code allows to scroll to the top of the page on click using the function above-->
+        
         <div class="pageup" @click="scrollToTop"><font-awesome-icon icon="fa-solid fa-chevron-up" /></div>
     </div>
 </template>

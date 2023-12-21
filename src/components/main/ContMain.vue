@@ -1,13 +1,17 @@
 <script>
+
+//Imports of all the child components for the Main section
+
 import Award from './Award.vue';
 import Service from './Service.vue';
 import Move from './Move.vue';
 import Testimonials from './Testimonials.vue';
 import QuoteBlue from './QuoteBlue.vue';
-import Quotebottom from './Quotebottom.vue';
+
 
 export default{
    
+    //Components registration
 
     components:{
         Award,
@@ -15,7 +19,7 @@ export default{
         Move,
         Testimonials,
         QuoteBlue,
-        Quotebottom,
+       
         
 
     }
@@ -28,7 +32,6 @@ export default{
     <Service/>
     <Move/>
     <Testimonials/>
-    <Quotebottom/>
     
 
 </template>

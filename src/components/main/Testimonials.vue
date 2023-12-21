@@ -2,6 +2,9 @@
 export default{
     data(){
         return{
+
+            //Object array required to populate the v-for below
+
             testimonials:[
                 {
                     "img":"../src/assets/images/avada-movers-johndoe-final-200x200.jpg",
@@ -29,6 +32,9 @@ export default{
         </div>
     </div>
     <div class="cards-cnt">
+        
+        <!-- v-for to populate the section using props from Cards -->
+
         <div class="cards" v-for="item in testimonials">
             <div>
                 <img :src="item.img" alt="">

@@ -1,11 +1,16 @@
 <script>
 export default{
+
+    //props list
+
     props:{
         value:"string"
     }
 }
 </script>
 <template>
+    <!-- this block will be iterated in the parent component -->
+    
     <li id="list"><a href=""><font-awesome-icon icon="fa-solid fa-chevron-right" /> {{ value }}</a></li>
 </template>
 <style scoped lang="scss">

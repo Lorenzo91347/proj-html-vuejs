@@ -1,5 +1,8 @@
 <script>
 export default{
+
+    //props registration
+
     props:{
         thumb : "image",
         text : "title"
@@ -7,6 +10,7 @@ export default{
 }
 </script>
 <template>
+    <!-- this section will be iterated in the parent component(Service)-->
     <div>
         <img :src="thumb" alt="">
         <h3>{{ text }}</h3>

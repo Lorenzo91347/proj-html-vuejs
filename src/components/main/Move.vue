@@ -2,6 +2,7 @@
 export default{}
 </script>
 <template>
+    <!-- visually the more impacting section  of the page,drawing attention to itself with the background-->
     <div class="move">
         <div class="move-box">
             <div>we remove the headache from moving</div>
@@ -17,6 +18,9 @@ export default{}
 
 </template>
 <style scoped lang="scss">
+
+//Scss imports
+
 @use '../../assets/styles/colors.scss' as *;
 @use '../../assets/styles/variables.scss'as *;
 
