@@ -55,11 +55,6 @@ export default{
         justify-content: center;
         .title{
             text-align: center;
-            width: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction:column;
               
                 div,
                 h2{

@@ -11,14 +11,15 @@ export default{
 }
 </script>
 <template>
-  <header>
-    <HeaderMain/>
-</header>
-    <main>
-        <ContMain/>
-    </main>
-    
-    <FooterMain/>
+        <header>
+            <HeaderMain/>
+        </header>
+        <main>
+            <ContMain/>
+        </main>
+        <footer>
+            <FooterMain/>
+        </footer>
 
 </template>
 <style scoped lang="scss">

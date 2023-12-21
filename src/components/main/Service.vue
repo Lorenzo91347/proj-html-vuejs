@@ -53,11 +53,6 @@ export default{
 
 .titles{
         text-align: center;
-        width: 500px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       
         
         div,
         h2{
