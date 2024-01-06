@@ -5,7 +5,10 @@ export default{
             //values for toggling the quote box layover and store the input values
             showOver:false,
             miles:'',
-            kgs:''
+            kgs:'',
+            showPrice:false,
+            x:'',
+            stop:false
         }
     },
     methods:{
@@ -18,7 +21,21 @@ export default{
         },
         isNotShown(){
             this.showOver = false
-        }
+        },
+        movePrice(arg1,arg2){
+            if(isNaN(this.kgs || this.miles)){
+                this.stop = true;
+                return
+            }
+             let totalPrice = (arg1 * 0.37) + (arg2 * 1.25);
+                this.x = totalPrice
+                this.stop = false
+                this.showPrice = true
+
+        },
+
+
+
     }
 }
 </script>
@@ -40,13 +57,15 @@ export default{
         </div>
         <div class="insert">
             <div>Insert you data to get a quote!</div>
+            <div v-if="showPrice">Your price is {{ x }} dollars </div>
+            <div v-if="stop">Please insert numbers only!</div>
             
             <!-- form for inserting the values which will go into the calculation -->
             <form action="">
-                <input type="number" placeholder="Insert the miles" v-model="miles">
-                <input type="number" placeholder="Insert the kgs" v-model="kgs">
+                <input type="text" placeholder="Insert the miles" v-model="miles">
+                <input type="text" placeholder="Insert the kgs" v-model="kgs">
             </form>
-            <button class="submit">Calculate</button>
+            <button class="submit" @click="movePrice(miles,kgs),postPrice()">Calculate</button>
         </div>
     </div>
 </div>
