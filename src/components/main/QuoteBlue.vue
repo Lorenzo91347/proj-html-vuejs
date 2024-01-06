@@ -21,16 +21,19 @@ export default{
         },
         isNotShown(){
             this.showOver = false
+            this.stop = false
+            this.showPrice = false
         },
         movePrice(arg1,arg2){
-            if(isNaN(this.kgs || this.miles)){
+            if(isNaN(this.kgs && this.miles)){
                 this.stop = true;
+                this.showPrice =false;
                 return
             }
              let totalPrice = (arg1 * 0.37) + (arg2 * 1.25);
-                this.x = totalPrice
-                this.stop = false
-                this.showPrice = true
+                this.x = totalPrice;
+                this.stop = false;
+                this.showPrice = true;
 
         },
 
@@ -65,7 +68,7 @@ export default{
                 <input type="text" placeholder="Insert the miles" v-model="miles">
                 <input type="text" placeholder="Insert the kgs" v-model="kgs">
             </form>
-            <button class="submit" @click="movePrice(miles,kgs),postPrice()">Calculate</button>
+            <button class="submit" @click="movePrice(miles,kgs)">Calculate</button>
         </div>
     </div>
 </div>
