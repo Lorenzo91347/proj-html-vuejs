@@ -24,13 +24,22 @@ export default{
             this.stop = false
             this.showPrice = false
         },
+
+        // this method will calculate the quote for the move, or post a cautionary message if the user does not enter numbers 
+
         movePrice(arg1,arg2){
             if(isNaN(this.kgs && this.miles)){
                 this.stop = true;
                 this.showPrice =false;
                 return
             }
-             let totalPrice = (arg1 * 0.37) + (arg2 * 1.25);
+            if((this.kgs && this.miles) <= 0){
+                this.stop = true;
+                this.showPrice =false;
+                return
+            }
+            
+            let totalPrice = (arg1 * 0.37) + (arg2 * 1.25);
                 this.x = totalPrice;
                 this.stop = false;
                 this.showPrice = true;
@@ -61,12 +70,12 @@ export default{
         <div class="insert">
             <div>Insert you data to get a quote!</div>
             <div v-if="showPrice">Your price is {{ x }} dollars </div>
-            <div v-if="stop">Please insert numbers only!</div>
+            <div v-if="stop">Please insert numbers above 0 only!</div>
             
             <!-- form for inserting the values which will go into the calculation -->
             <form action="">
-                <input type="text" placeholder="Insert the miles" v-model="miles">
-                <input type="text" placeholder="Insert the kgs" v-model="kgs">
+                <input maxlength="6" minlength="1" type="text" placeholder="Insert the miles" v-model="miles">
+                <input maxlength="6" minlength="1" type="text" placeholder="Insert the kgs" v-model="kgs">
             </form>
             <button class="submit" @click="movePrice(miles,kgs)">Calculate</button>
         </div>
@@ -116,6 +125,10 @@ div{
         form{
             display: flex;
             flex-direction: column;
+
+            input{
+                
+            }
             .submit{
                 border: 1px solid white;
                 border-radius: 10px;
