@@ -57,7 +57,7 @@ export default{
 
 <div class="quote" @click="isShown()">
     <font-awesome-icon icon="fa-regular fa-paper-plane" />
-    get a free quote online now!!
+    <div>get a free quote online now!!</div>
 </div>
 
 <!-- template block for the quote box -->
@@ -142,6 +142,14 @@ div{
 }
 .close-cnt{
     height: 40px;
+}
+
+.quote{
+    div{
+        max-width: fit-content;
+        height:10px;
+        cursor: pointer;
+    }
 }
 
 </style>
