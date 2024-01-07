@@ -25,9 +25,9 @@ export default{
 </script>
 <template>
     <!--When rendered inside HeaderMain the prop will be cycled -->
-        <div @mouseover="showList()">
+        <div @mouseover="showList()" @mouseleave="hidList()">
             <li>{{ value }}</li>
-            <ul v-if="listShown" @mouseover="showList()" @mouseleave="hidList()" :class="{ active: listShown }">
+            <ul v-if="listShown"  @mouseover="showList()" @mouseleave="hidList()" :class="{ active: listShown }">
                 <li class="dropdown">Item 1</li>
                 <li class="dropdown">Item 1</li>
                 <li class="dropdown">Item 1</li>                
