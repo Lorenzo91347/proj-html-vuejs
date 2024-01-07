@@ -6,6 +6,20 @@ export default {
         
 		};
 	},
+	methods:{
+		handleClickOutside(event) {
+			const targetElement = this.$refs.targetElement;
+			if (!targetElement.contains(event.target)) {
+			this.listShown = false;
+			}
+		},
+	},
+	mounted() {
+		document.addEventListener('click', this.handleClickOutside);
+	},
+	beforeDestroy() {
+		document.removeEventListener('click', this.handleClickOutside);
+	},
 	
 		
 	
@@ -18,11 +32,11 @@ export default {
 <template>
 	<!--When rendered inside HeaderMain the prop will be cycled -->
 	<div>
-		<li @click="listShown = !listShown " >{{ value }}</li>
+		<li ref="targetElement" @click="listShown = !listShown " >{{ value }}</li>
 		<ul v-if="listShown"  :class="{ active: listShown }">
-			<li class="dropdown">Item 1</li>
-			<li class="dropdown">Item 1</li>
-			<li class="dropdown">Item 1</li>
+			<li class="dropdown"><a href="">Item 1</a></li>
+			<li class="dropdown"><a href="">Item 1</a></li>
+			<li class="dropdown"><a href="">Item 1</a></li>
 		</ul>
         <div v-else></div>
 	</div>
@@ -57,6 +71,13 @@ div {
 			top: 20px;
 		}
 	}
+}
+a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: $color-lima-light;
+    }
 }
 </style>
 
